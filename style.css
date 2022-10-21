@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "digital-number";
+    src: url("font/digital-7.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "font-name";
+    src: url("font/Prata-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'digital-number', Times, serif;
+    font-weight: 400;
+}
+#name{
+    cursor: pointer;
+    font-family: 'digital-number', 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 800;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 2px 2px 3px black;
+}
+#name:hover::before{
+    content: ">> ";
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    background-image: url("https://besthqwallpapers.com/Uploads/23-8-2016/177/thumb2-formula-math-texture.jpg");
+    
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    min-height: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    
+}
+#new-content-display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 40px;
+    width: 100%;
+    min-height: 7vh;
+}
+.line-up{
+    display: flex;
+    width: 100%;
+    min-height: 7vh;
+}
+.text-calculadora{
+    font-size: 18px;
+}
+#old-content-display{
+    display: flex;
+    width: 100%;
+    font-size: 30px;
+    height: inherit;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.grid-button{
+    display: grid;
+    min-height: 50vh;
+    grid-template-columns: repeat(5, 1fr);
+}
+.grid-button > button{
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+.grid-button > button:hover, #operation:hover{
+    background-color: white;
+    color: black;
+}
+#operation{
+    background-color: rgb(1, 1, 51);
+}
+#button-idem{
+    grid-column: 1/6;
+    font-size: 30px;
+}
